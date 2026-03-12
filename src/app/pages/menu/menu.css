@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 24px;
+  flex: 1;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #141414;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #888;
+}

@@ -1,0 +1,20 @@
+<app-header [title]="activeMenu.name" [count]="checkedCount" [value]="totalValue"></app-header>
+<div class="content">
+  <app-sidebar
+    [menus]="menus"
+    [activeMenuId]="activeMenuId"
+    (menuSelected)="selectMenu($event)"
+  ></app-sidebar>
+
+  <ul>
+    @for (item of activeMenu.items; track item.id) {
+      <li>
+        <input type="checkbox" [checked]="item.checked" (change)="toggle(item.id)" />
+        <div>
+          <span>{{ item.name }}</span>
+          <p>{{ item.value }}</p>
+        </div>
+      </li>
+    }
+  </ul>
+</div>
