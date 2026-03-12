@@ -2,6 +2,8 @@
 
 Тестовое задание на стажировку в Selectel на позицию фронтенд-разработчика. Мини-приложение на Angular 19.
 
+**Демо:** https://kobra-kid.github.io/selectel-frontend-2026/
+
 ## Стек
 
 - Angular 19
