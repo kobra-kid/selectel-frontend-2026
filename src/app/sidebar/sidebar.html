@@ -1,0 +1,5 @@
+<ul>
+  @for (menu of menus; track menu.id) {
+    <li (click)="select(menu.id)" [class.active]="menu.id === activeMenuId">{{ menu.name }}</li>
+  }
+</ul>
